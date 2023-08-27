@@ -5,3 +5,7 @@ table, th, td {
   th, td {
     background-color: papayawhip;
   }
+
+  p {
+    font-size: 3dvh;
+  }
