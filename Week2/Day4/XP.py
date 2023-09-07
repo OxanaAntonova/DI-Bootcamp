@@ -1,7 +1,5 @@
 #Exercise 1 : What Are You Learning ?
 
-#Write a function called display_message() that prints one sentence telling everyone what you are learning in this course.
-#Call the function, and make sure the message displays correctly.
 #def display_message() :
 #    print(f"I'm learning in developers course")
     
@@ -36,11 +34,14 @@
 
 #Create a function that accepts a number between 1 and 100 and generates another number randomly between 1 and 100.
 #Compare the two numbers, if it’s the same number, display a success message, otherwise show a fail message and display both numbers.
-#def numbers() :
-#    random_number = .randint(1,100)
-#print()
 
-#def numbers()  
+def random_number() :
+    random_number = .randint(1,100)
+if 
+else
+random_number()  
+
+
 
 #Exercise 5 : Let’s Create Some Personalized Shirts !
 

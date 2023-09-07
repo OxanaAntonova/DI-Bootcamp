@@ -1,9 +1,9 @@
 #Convert the two following lists, into dictionaries.
 # Hint: Use the zip method
-# keys = ['Ten', 'Twenty', 'Thirty']
-# values = [10, 20, 30]
-# Expected output:
-# {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+#keys = ['Ten', 'Twenty', 'Thirty']
+#values = [10, 20, 30]
+#Expected output:
+#{'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 #keys = ['Ten', 'Twenty', 'Thirty']
 #values = [10, 20, 30]
 #test_dict = {key: value for key, value in zip(keys, values)}
@@ -63,12 +63,12 @@
 # Exercise 4 : Disney Characters
 #users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
 #1/
-# print(disney_users_A)
+#print(disney_users_A)
 #{"Mickey": 0, "Minnie": 1, "Donald": 2, "Ariel": 3, "Pluto": 4}
 #users_a = {}
 #for i, value in enumerate(users):
 #    users_a.update({i: value})
-#    print(users_a)
+#print(users_a)
 
 #2/
 #print(disney_users_B)

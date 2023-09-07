@@ -1,0 +1,60 @@
+img {
+    width: 220px;
+    height: 300px;
+    padding: 10px;
+}
+.product  {
+    position: relative;
+    text-align: center;
+}
+.btn {
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+}
+del {
+    padding: 10px;
+    color:grey;
+}
+
+ins {
+    font-size: 20px;
+    color: green;
+    text-decoration: none;
+}
+.bg {
+    position: absolute;
+    z-index: 5;
+    top: 15px;
+    left: 30px;
+    color: white;
+    background: green;
+    padding: 3px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    font-size: 15px;
+}
+.bgdiscount {
+    position: absolute;
+    z-index: 5;
+    top: 15px;
+    right: 10px;
+    color: white;
+    background: red;
+    padding: 3px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    font-size: 15px;
+}
+.border {
+    border: 2px solid red;
+}
+.mainborder {
+    border: 1px solid red;
+    padding: 5px;
+}

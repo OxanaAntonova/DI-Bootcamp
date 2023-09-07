@@ -1,0 +1,20 @@
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.table1 {
+    color:red;
+    border: 1px solid red;
+    width: 67%;
+}
+
+td {
+    border: 1px solid black;
+    padding: 15px;
+}  
+
+img {
+    position: relative;
+    left: 200px;
+}

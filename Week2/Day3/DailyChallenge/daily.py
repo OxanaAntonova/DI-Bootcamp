@@ -5,14 +5,14 @@
 #Make sure the letters are strings.
 #Make sure the indexes are stored in a list and those lists are values.
 
-word = "froggy"
-letters_dict = {}
-for index, letter in enumerate(word) :
-    if letter in letters_dict: 
-        letters_dict[letter].appened(index)
-    else :
-        letters_dict[letter] = [index]
-        print(letters_dict)  
+#word = "froggy"
+#letters_dict = {}
+#for index, letter in enumerate(word) :
+#    if letter in letters_dict: 
+#        letters_dict[letter].appened(index)
+#    else :
+#        letters_dict[letter] = [index]
+#        print(letters_dict)  
         
 #Challenge 2
 #Create a program that prints a list of the items you can afford in the store with the money you have in your wallet.

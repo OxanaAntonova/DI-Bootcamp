@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://raw.githubusercontent.com/devtlv/ShoppingProjectSetup_Week1Day2/599d42261926c8c14a3412c7aa057771bdb3a710/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li {
+    display: inline;
+}
+li a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+ul {
+    background-color: black;
+    padding: 20px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
