@@ -18,13 +18,26 @@
 #Create a program that prints a list of the items you can afford in the store with the money you have in your wallet.
 #Sort the list in alphabetical order.
 #Return “Nothing” if you can’t afford anything from the store.
-wallet = "$300"
-total_amount = 0
-items_bought = []
-convert_wallet = int(wallet.replace("$", ""))
+#items_bought = {
+#    "Water": "$1",
+#    "Bread": "$3",
+#    "TV": "$1.000",
+#    "Fertilizer": "$20"
+#}
+#wallet = "$300"
+#total_amount = 0
+#items_bought = []
+#convert_wallet = int(wallet.replace("$", ""))
 
-for key, value in items_bought.items():
-    convert_value = int(value.replace("$", "").replace(",", ""))
-    if convert_value < convert_wallet :
-        total_amount += convert_value
-        items_bought.append(key)
+#for key,value in items_bought.items():
+#    convert_value = int(value.replace("$", "").replace(",", ""))
+#    if convert_value < convert_wallet :
+#        total_amount += convert_value
+#        items_bought.append(key)
+        
+#        if len(items_bought) == 0:
+#           print("Nothing")
+#        else:
+#            print(f"I have in my wallet {convert_wallet}")    
+#            items_bought.sort()
+#            print(f"I bought {items_bought}")

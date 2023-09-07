@@ -1,5 +1,5 @@
 #Convert the two following lists, into dictionaries.
-# Hint: Use the zip method
+
 #keys = ['Ten', 'Twenty', 'Thirty']
 #values = [10, 20, 30]
 #Expected output:
@@ -10,14 +10,7 @@
 #print(test_dict)
 
 
-
 # Exercise 2 : Cinemax
-
-# A movie theater charges different ticket prices depending on a person’s age.
-# if a person is under the age of 3, the ticket is free.
-# if they are between 3 and 12, the ticket is $10.
-# if they are over the age of 12, the ticket is $15.
-# Given the following object:
 
 # family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
 # How much does each family member have to pay ?
@@ -41,6 +34,9 @@
     #else: ticket_cost = 15 
     #print(f"The cost of your movie ticket is ${ticket_cost}.") 
 
+
+
+# Exercise 3
 #brand = {
 #    'name': 'Zara',
 #    'creation_date': 1975,
