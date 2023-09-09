@@ -1,40 +1,58 @@
+board = list(range(1, 10))
 
-# inicilisation of the 1st list, for users, to put numbers 
-first_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+def draw_board(board):
+    for i in range(3):
+        print("|", board[0 + i * 3], "|", board[1 + i * 3], "|", board[2 + i * 3], "|")
+#draw_board(board)
 
-# lines of victory
-victory = [[0, 1, 2], 
-            [3, 4, 5],
-            [6, 7, 8],
-            [0, 3, 6],
-            [1, 4, 7],
-            [2, 5, 8],
-            [0, 4, 8],
-            [2, 4, 6]
-            ]
-# display on the screen
-def print_first_list() :    
-    print(first_list[0], end = " ")
-    print(first_list[1], end = " ")
-    print(first_list[2])
-    
-    print(first_list[3], end = " ")
-    print(first_list[4], end = " ")
-    print(first_list[5])
-    
-    print(first_list[6], end = " ")
-    print(first_list[7], end = " ")
-    print(first_list[8])
-    
-    # make a move to the cell
-    
-    # get a result 
-        # for x in ....(victorie's line)
-    
-    # game - True and False 
-        # while (пока игра продолжается)
-        # show to the user the list
-        # ask user where to do the step 
-        # make step
-        # if  else - to determine the winner
-        
+def take_input(player):
+    valid = False
+    while not valid:
+        player_answer = input("Where will you put it? " + player + "? ")
+        try:
+            player_answer = int(player_answer)
+        except ValueError:
+            print("Invalid input. Are you sure you entered a number?")
+            continue
+        if 1 <= player_answer <= 9:
+            if str(board[player_answer - 1]) not in "XO":
+                board[player_answer - 1] = player
+                valid = True
+            else:
+                print("This place is already taken")
+        else:
+            print("Invalid input. Enter a number from 1 to 9.")
+
+def check_win(board):
+    win_options = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+    for each in win_options:
+        if board[each[0]] == board[each[1]] == board[each[2]]:
+            return board[each[0]]
+    return False
+
+def main(board):6
+counter = 0
+win = False
+while not win:
+        draw_board(board)
+        if counter % 2 == 0:
+            take_input("X")
+        else:
+            take_input("O")
+        counter += 1
+
+        tmp = check_win(board)
+        if tmp:
+            print(tmp, "You are the winner!")
+            win = True
+            break
+        if counter == 9:
+            print("Draw!")
+            break
+draw_board(board)
+
+main(board)
+
+input("Press Enter to exit!")            
+            
+            
