@@ -43,7 +43,7 @@ sampleJson = """{
    }
 }"""
 #Access the nested “salary” key from the JSON-string above.
-#Add a key called “birth_date” to the JSON-string at the same level as the “name” key.
+
 #Save the dictionary as JSON to a file.
 
 import json
@@ -99,13 +99,11 @@ dict_second = {
 with open("person.json", "w") as file:
    json.dump(dict_second, file)
 
-# read the content of the json file
-# convert it to a dictionary
+
 def check():
    with open('person.json', "r") as file:
       parsed_json = json.load(file)
 
-   # same scope (environment)
-   # outside
+   
    for key in parsed_json.keys():
       print(key)
