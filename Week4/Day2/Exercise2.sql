@@ -1,0 +1,16 @@
+-- select * from customer;
+-- select CONCAT_WS (' ', first_name, last_name) AS full_name from customer;
+-- select DISTINCT create_date from customer;
+-- select * from customer ORDER BY first_name DESC;
+-- select film_id, title, description, release_year, rental_rate from film ORDER BY rental_rate ASC;
+-- select address, phone from customer INNER JOIN address ON customer.address_id=address.address_id where (district='Texas');
+-- select * from film where (film_id=150 OR film_id=15);
+-- select film_id, title, description, length, rental_rate from film where (title='Breaking Home');
+-- select film_id, title, description, length, rental_rate from film where (title LIKE 'Br%');
+-- select * from film ORDER BY rental_rate ASC LIMIT 10;
+-- select * from film ORDER BY rental_rate ASC OFFSET 10 FETCH FIRST 10 ROWS ONLY;
+-- select amount, payment_date from customer INNER JOIN payment ON payment.customer_id=customer.customer_id ORDER BY payment.customer_id
+-- select * from film LEFT JOIN inventory ON film.film_id=inventory.film_id where inventory_id IS NULL;
+-- select * from city INNER JOIN country on city.country_id=country.country_id;
+-- select customer.customer_id, first_name, last_name, amount, payment_date, staff_id from payment INNER JOIN customer ON customer.customer_id=payment.customer_id ORDER BY staff_id ASC;
+-- select COUNT (*) from payment INNER JOIN customer ON customer.customer_id=payment.customer_id;
